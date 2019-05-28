@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>LOST KID</title>
+    </head>
+
+    <body>
+        <div class="container">
+        <form method = 'POST' action="" enctype="multipart/form-data">
+        
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class = 'btn btn-default' value="Post"/>
+        </form>
+    </div>
+    <script>
+        alert('{{ message }}');
+    </script>
+    
+    </body>
+</html>
